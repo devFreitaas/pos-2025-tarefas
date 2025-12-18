@@ -1,4 +1,0 @@
-const API_KEYS = {
-    GOOGLE_API_KEY: 'AIzaSyABBRDs5Zeem3_AhGLhJw3uv9PZA5Y6zaU',
-    SEARCH_ENGINE_ID: 'e2331e1cdd7434373'
-};
