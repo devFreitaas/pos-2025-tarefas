@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap');
+
+body { 
+  font-family: 'Lexend', sans-serif; 
+  background-color: #eef2f9;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  background: #eef2f9;
+  box-shadow: 8px 8px 16px #c8d0e0, -8px -8px 16px #ffffff;
+  transition: all 0.4s ease-in-out;
+}
+
+.form-select {
+  background-color: #eef2f9;
+  box-shadow: inset 4px 4px 8px #c8d0e0, inset -4px -4px 8px #ffffff;
+  transition: all 0.3s ease;
+}
+
+.form-select:focus {
+  outline: none;
+  box-shadow: inset 2px 2px 4px #c8d0e0, inset -2px -2px 4px #ffffff, 0 0 0 2px #3b82f6;
+}
+
+.hidden-view { 
+  opacity: 0; 
+  transform: scale(0.95); 
+  pointer-events: none; 
+  visibility: hidden;
+}
+
+.visible-view { 
+  opacity: 1; 
+  transform: scale(1); 
+  pointer-events: auto; 
+  visibility: visible;
+}
+
+.fade-in { 
+  animation: fadeIn 0.5s ease-in-out forwards; 
+  opacity: 0;
+}
+
+@keyframes fadeIn { 
+  from { opacity: 0; transform: translateY(10px); } 
+  to { opacity: 1; transform: translateY(0); } 
+}
